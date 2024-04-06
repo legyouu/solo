@@ -15,7 +15,7 @@
     "env": {
       "BOT_TOKEN": {
         "description": "توكن",
-        "value": "6013587287:AAFqHOeJBOe40u-huhTHaozRDZ1quyxhEnc",
+        "value": "6013587287:AAHQPzV9AjHaNFBMQbB-yYncRARIvAE0dhw",
         "required": true
       },
       "MONGO_DB_URL": {
