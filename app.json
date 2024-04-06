@@ -1,0 +1,80 @@
+{
+    "name": "Yukki Music Bot",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "logo": "https://telegra.ph/file/c0e014ff34f34d1056627.png",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Yukki",
+    "YukkiMusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "BOT_TOKEN": {
+        "description": "توكن",
+        "value": "6013587287:AAFqHOeJBOe40u-huhTHaozRDZ1quyxhEnc",
+        "required": true
+      },
+      "MONGO_DB_URL": {
+        "description": "قاعده",
+        "value": "mongodb+srv://Elkber:Elkber@cluster0.feuljpn.mongodb.net/?retryWrites=true&w=majority",
+        "required": true
+      },
+      "OWNER": {
+        "description": "المالك",
+        "value": "1236115319",
+        "required": true
+      }
+    },
+    "OWNER_NAME": {
+        "description": "اسم المالك",
+        "value": "@𝑳 𝑬 𝑮 𝑬 𝑵 𝑫.❤_",
+        "required": true
+      }
+    },
+    "GROUP": {
+        "description": "جروب",
+        "value": "L109N",
+        "required": true
+      }
+    },
+    "CHANNEL": {
+        "description": "قناه",
+        "value": "UU_LE2",
+        "required": true
+      }
+    },
+    "LOGS": {
+        "description": "لوجز",
+        "value": "L170N",
+        "required": true
+      }
+    },
+    "VIDEO": {
+        "description": "فديو",
+        "value": "https://t.me/+E5P5Sc2Hj_ljODQ0",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "free"
+          }
+      },
+      "stack": "container"
+}
